@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: #4f4f4f;
+  background: radial-gradient(circle, #4f4f4f 0%, #222222 50%, black 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4f4f4f",endColorstr="#000000",GradientType=1);
+}
+
+body header {
+  position: relative;
+  height: 60px;
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .logo a {
+  text-decoration: none;
+}
+
+body header .logo a h1 {
+  color: #ffff00;
+  font-weight: 300;
+  border-bottom: 1px solid #ffff00;
+  border-top: 1px solid #ffff00;
+}
+
+body header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header nav a {
+  text-decoration: none;
+  color: #ffff00;
+  font-weight: 200;
+  margin-left: 20px;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+body header nav .active {
+  background: #ffff00;
+  color: #000000;
+  font-weight: 400;
+}
+
+body section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  height: calc(100vh - 100px);
+  margin: 0 auto;
+}
+
+body section .left {
+  width: 62%;
+  height: 90%;
+  margin: auto 0;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 15px;
+}
+
+body section .left h1 {
+  font-size: 30px;
+  color: #000;
+  font-weight: 300;
+  padding-left: 15px;
+  background: rgba(255, 255, 255, 0.6);
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+body section .left .products {
+  width: calc(100% - 30px);
+  overflow: hidden;
+  height: 200px;
+  margin-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+body section .left .products h3 {
+  font-weight: 300;
+  color: #fff;
+  margin-top: 10px;
+  border-bottom: 2px solid #fff;
+}
+
+body section .left .products .container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  overflow-y: scroll;
+  background: rgba(255, 255, 255, 0.6);
+  margin-top: 10px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body section .left .products .container .card {
+  height: 60%;
+  width: 45%;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 15px;
+  margin-right: 25px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 45%;
+          flex: 0 0 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+body section .left .products .container .card img {
+  width: 60px;
+}
+
+body section .left .products .container .card .text {
+  width: 80%;
+}
+
+body section .left .products .container .card .text p {
+  font: 12px;
+}
+
+body section .left .details {
+  width: calc(100% - 30px);
+  height: auto;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+body section .left .details h3 {
+  font-weight: 300;
+  color: #fff;
+  margin-top: 10px;
+  border-bottom: 2px solid #fff;
+  width: auto;
+}
+
+body section .left .details form {
+  width: 100%;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.6);
+  margin-top: 10px;
+}
+
+body section .left .details form #ast {
+  color: red;
+}
+
+body section .left .details form .hidden {
+  display: none;
+  pointer-events: none;
+}
+
+body section .left .details form .row1, body section .left .details form .row2,
+body section .left .details form .row3,
+body section .left .details form .row4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px auto;
+  width: 100%;
+}
+
+body section .left .details form .row1 .fName,
+body section .left .details form .row1 .lName,
+body section .left .details form .row1 .postal,
+body section .left .details form .row1 .stAdd,
+body section .left .details form .row1 .province,
+body section .left .details form .row1 .city, body section .left .details form .row1 .email, body section .left .details form .row1 .number, body section .left .details form .row2 .fName,
+body section .left .details form .row2 .lName,
+body section .left .details form .row2 .postal,
+body section .left .details form .row2 .stAdd,
+body section .left .details form .row2 .province,
+body section .left .details form .row2 .city, body section .left .details form .row2 .email, body section .left .details form .row2 .number,
+body section .left .details form .row3 .fName,
+body section .left .details form .row3 .lName,
+body section .left .details form .row3 .postal,
+body section .left .details form .row3 .stAdd,
+body section .left .details form .row3 .province,
+body section .left .details form .row3 .city,
+body section .left .details form .row3 .email,
+body section .left .details form .row3 .number,
+body section .left .details form .row4 .fName,
+body section .left .details form .row4 .lName,
+body section .left .details form .row4 .postal,
+body section .left .details form .row4 .stAdd,
+body section .left .details form .row4 .province,
+body section .left .details form .row4 .city,
+body section .left .details form .row4 .email,
+body section .left .details form .row4 .number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 15px;
+  width: 45%;
+}
+
+body section .left .details form .row1 .fName input,
+body section .left .details form .row1 .lName input,
+body section .left .details form .row1 .postal input,
+body section .left .details form .row1 .stAdd input,
+body section .left .details form .row1 .province input,
+body section .left .details form .row1 .city input, body section .left .details form .row1 .email input, body section .left .details form .row1 .number input, body section .left .details form .row2 .fName input,
+body section .left .details form .row2 .lName input,
+body section .left .details form .row2 .postal input,
+body section .left .details form .row2 .stAdd input,
+body section .left .details form .row2 .province input,
+body section .left .details form .row2 .city input, body section .left .details form .row2 .email input, body section .left .details form .row2 .number input,
+body section .left .details form .row3 .fName input,
+body section .left .details form .row3 .lName input,
+body section .left .details form .row3 .postal input,
+body section .left .details form .row3 .stAdd input,
+body section .left .details form .row3 .province input,
+body section .left .details form .row3 .city input,
+body section .left .details form .row3 .email input,
+body section .left .details form .row3 .number input,
+body section .left .details form .row4 .fName input,
+body section .left .details form .row4 .lName input,
+body section .left .details form .row4 .postal input,
+body section .left .details form .row4 .stAdd input,
+body section .left .details form .row4 .province input,
+body section .left .details form .row4 .city input,
+body section .left .details form .row4 .email input,
+body section .left .details form .row4 .number input {
+  border: none;
+  border-bottom: 2px solid #000;
+  background: none;
+  font-size: 16px;
+  outline: none;
+}
+
+body section .left .details form .row3,
+body section .left .details form .row4, body section .left .details form .row2 {
+  margin-top: 20px;
+}
+
+body section .right {
+  width: 35%;
+  height: 90%;
+  margin: auto 0;
+}
+
+body section .right .total {
+  border-radius: 15px;
+  height: 40%;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+body section .right .total h3 {
+  font-size: 26px;
+  color: #000;
+  font-weight: 300;
+  padding-left: 15px;
+  background: rgba(255, 255, 255, 0.6);
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+body section .right .total .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom: 2px solid #000;
+  width: 90%;
+  margin: 20px auto 0px auto;
+}
+
+body section .right .total .items .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section .right .total .items .row:first-child {
+  font-weight: bold;
+}
+
+body section .right .total .sum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  margin: 0px auto 10px auto;
+}
+
+body section .right button {
+  width: 100%;
+  margin: 20px auto 0px auto;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  background: #ffff00;
+  outline: none;
+  cursor: pointer;
+}
+
+body section .right button:hover {
+  background: rgba(255, 255, 0, 0.8);
+}
+/*# sourceMappingURL=cart.css.map */
