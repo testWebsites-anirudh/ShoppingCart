@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./static/images/anirudh.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/cart/cart.css">
+    <title>Cart</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="./">
+                <h1>Anirudh Inc.</h1>
+            </a>
+        </div>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./cart.html" class="active">Cart</a>
+        </nav>
+    </header>
+
+    <section>
+
+        <div class="left">
+            <h1>Your Cart</h1>
+            <section class="products">
+                <h3>Products</h3>
+                <div class="container">
+
+                </div>
+            </section>
+
+            <section class="details">
+                <h3>Customer Details</h3>
+
+                <form action="./static/php/cart.php" method="POST" id="myForm">
+                    <div class="row1">
+                        <div class="fName">
+                            <label for="fName">First Name</label>
+                            <input type="text" name="fName">
+                        </div>
+
+                        <div class="lName">
+                            <label for="lName">Last Name
+                                <span id="ast">&ast;</span></label>
+                            <input type="text" name="lName">
+                        </div>
+                    </div>
+
+                    <div class="row2">
+                        <div class="email">
+                            <label for="email">Email Address
+                                <span id="ast">&ast;</span></label>
+                            <input type="text" name="email">
+                        </div>
+                        <div class="number">
+                            <label for="number">Contact Number
+                                <span id="ast">&ast;</span></label>
+                            <input type="text" name="number">
+                        </div>
+                    </div>
+
+                    <div class="row3">
+                        <div class="stAdd">
+                            <label for="stAdd">Street Address
+                                <span id="ast">&ast;</span></label>
+                            <input type="text" name="stAdd">
+                        </div>
+
+                        <div class="postal">
+                            <label for="postal">Postal Code
+                                <span id="ast">&ast;</span></label>
+                            <input type="text" name="postal">
+                        </div>
+                        
+                    </div>
+
+                    <div class="row4">
+                        <div class="city">
+                            <label for="city">City
+                                <span id="ast">&ast;</span></label>
+                            <input type="text" name="city">
+                        </div>
+
+                        <div class="province">
+                            <label for="province">Province
+                                <span id="ast">&ast;</span></label>
+                            <input type="text" name="province">
+                        </div>
+                    </div>
+
+                    <div class="hidden">
+            
+                    </div>
+                </form>
+
+            </section>
+
+        </div>
+        <div class="right">
+            <div class="total">
+                <h3>Total Amount</h3>
+
+                <div class="items">
+                    <div class="row">
+                        <p>Item * Qty</p>
+                        <p>Price</p>
+                    </div>
+                </div>
+                <div class="sum">
+                
+                </div>
+            </div>
+            <button type="submit" form="myForm">Checkout</button>
+        </div>
+    </section>
+
+    <script src="./static/js/cart.js"></script>
+</body>
+
+</html>
