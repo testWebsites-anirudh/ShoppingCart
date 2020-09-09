@@ -1,0 +1,440 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: #4f4f4f;
+  background: radial-gradient(circle, #4f4f4f 0%, #222222 50%, black 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4f4f4f",endColorstr="#000000",GradientType=1);
+}
+
+body header {
+  position: relative;
+  height: 60px;
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .logo a {
+  text-decoration: none;
+}
+
+body header .logo a h1 {
+  color: #ffff00;
+  font-weight: 300;
+  border-bottom: 1px solid #ffff00;
+  border-top: 1px solid #ffff00;
+}
+
+body header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header nav a {
+  text-decoration: none;
+  color: #ffff00;
+  font-weight: 200;
+  margin-left: 20px;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+body header nav .active {
+  background: #ffff00;
+  color: #000000;
+  font-weight: 400;
+}
+
+body section {
+  position: relative;
+  width: 100%;
+}
+
+body section .product {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section .product .left, body section .product .right {
+  height: 90%;
+  width: 50%;
+  margin: auto 0;
+}
+
+body section .product .left .price, body section .product .right .price {
+  font-size: 18px;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid #fff;
+  width: auto;
+}
+
+body section .product .left .qty, body section .product .right .qty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 10px;
+  width: 30%;
+}
+
+body section .product .left .qty input, body section .product .right .qty input {
+  outline: none;
+  font-size: 16px;
+}
+
+body section .product .left .qty .error, body section .product .right .qty .error {
+  font-size: 12px;
+  color: red;
+  margin-top: 3px;
+}
+
+body section .product .left .qty .btns, body section .product .right .qty .btns {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section .product .left .qty .btns button, body section .product .right .qty .btns button {
+  font-size: 14px;
+  padding: 2px 5px;
+}
+
+body section .product .left .qty .btns button.btnDone, body section .product .right .qty .btns button.btnDone {
+  background: white;
+}
+
+body section .product .left .qty .btns button.btnDone:hover, body section .product .right .qty .btns button.btnDone:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+body section .product1 {
+  height: calc(100vh - 60px);
+}
+
+body section .product1 .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section .product1 .left img {
+  width: 70%;
+}
+
+body section .product1 .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body section .product1 .right h1 {
+  width: 100%;
+  text-align: left;
+  font-size: 40px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+body section .product1 .right p {
+  text-align: left;
+  width: 50%;
+  font-size: 20px;
+  margin-top: 5px;
+  line-height: 25px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+body section .product1 .right button {
+  font-size: 20px;
+  background: yellow;
+  font-weight: 400;
+  color: #000000;
+  margin-top: 15px;
+  padding: 2px 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+body section .product1 .right button:hover {
+  background: rgba(255, 255, 0, 0.8);
+}
+
+body section .product2, body section .product3, body section .product4 {
+  height: 100vh;
+}
+
+body section .product2 .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-align: right;
+}
+
+body section .product2 .left h1 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #fff;
+}
+
+body section .product2 .left p {
+  width: 50%;
+  font-size: 20px;
+  margin-top: 5px;
+  line-height: 25px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+body section .product2 .left button {
+  font-size: 20px;
+  background: yellow;
+  font-weight: 400;
+  color: #000000;
+  margin-top: 15px;
+  padding: 2px 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+body section .product2 .left button:hover {
+  background: rgba(255, 255, 0, 0.8);
+}
+
+body section .product2 .left .qty > .btns {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body section .product2 .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section .product2 .right img {
+  width: 60%;
+}
+
+body section .product3 .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section .product3 .left img {
+  width: 35%;
+}
+
+body section .product3 .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body section .product3 .right h1 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #fff;
+}
+
+body section .product3 .right p {
+  width: 50%;
+  font-size: 20px;
+  margin-top: 5px;
+  line-height: 25px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+body section .product3 .right button {
+  font-size: 20px;
+  background: yellow;
+  font-weight: 400;
+  color: #000000;
+  margin-top: 15px;
+  padding: 2px 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+body section .product3 .right button:hover {
+  background: rgba(255, 255, 0, 0.8);
+}
+
+body section .product4 .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+body section .product4 .left h1 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #fff;
+}
+
+body section .product4 .left p {
+  width: 50%;
+  text-align: right;
+  font-size: 20px;
+  margin-top: 5px;
+  line-height: 25px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+body section .product4 .left button {
+  font-size: 20px;
+  background: yellow;
+  font-weight: 400;
+  color: #000000;
+  margin-top: 15px;
+  padding: 2px 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+body section .product4 .left button:hover {
+  background: rgba(255, 255, 0, 0.8);
+}
+
+body section .product4 .left .qty > .btns {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body section .product4 .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section .product4 .right img {
+  width: 50%;
+}
+
+body footer {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+body footer a {
+  color: #fff;
+}
+/*# sourceMappingURL=index.css.map */
